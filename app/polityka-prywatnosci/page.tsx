@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
                 <div className="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4">
                   <p>
-                    Administratorem Twoich danych osobowych przetwarzanych zgodnie z niniejszą Polityką Prywatności jest <strong>CONSBRIDGE PRODUCTION SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</strong> z siedzibą w Jaworznie przy ul. Galmany 6A, 43-600 Jaworzno, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000998530, NIP: 6322032434, REGON: 523457269 (dalej: „Administrator" lub „CP").
+                    Administratorem Twoich danych osobowych przetwarzanych zgodnie z niniejszą Polityką Prywatności jest <strong>CONSBRIDGE PRODUCTION SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</strong> z siedzibą w Jaworznie przy ul. Galmany 6A, 43-600 Jaworzno, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000998530, NIP: 6322032434, REGON: 523457269 (dalej: &ldquo;Administrator&rdquo; lub &ldquo;CP&rdquo;).
                   </p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
                 <div className="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4">
                   <p>Twoje dane osobowe są przetwarzane w następujących sytuacjach:</p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>odwiedzasz stronę www.consbridgeproduction.pl lub którąkolwiek z jej podstron (dalej ww. strona oraz jej podstrony zwane są – łącznie lub osobno – „Stroną");</li>
+                    <li>odwiedzasz stronę www.consbridgeproduction.pl lub którąkolwiek z jej podstron (dalej ww. strona oraz jej podstrony zwane są – łącznie lub osobno – &ldquo;Stroną&rdquo;);</li>
                     <li>kontaktujesz się z CP, w tym m.in. osobiście, telefonicznie, za pomocą poczty elektronicznej lub poczty tradycyjnej albo też za pomocą formularza kontaktowego na Stronie.</li>
                   </ul>
                 </div>

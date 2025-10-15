@@ -53,19 +53,19 @@ export default function Footer() {
             <h3 className="font-heading font-semibold text-lg mb-4 text-white">Szybkie Linki</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="/" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   Strona Główna
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/uslugi" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="/uslugi" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   Usługi
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/kontakt" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                <Link href="/kontakt" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

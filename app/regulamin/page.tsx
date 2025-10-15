@@ -46,7 +46,7 @@ export default function TermsPage() {
                 </h2>
                 <div className="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4">
                   <p>
-                    Niniejszy serwis internetowy (dalej – wraz z podstronami – jako: „Strona") został przygotowany na zlecenie spółki pod firmą <strong>CONSBRIDGE PRODUCTION SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</strong> z siedzibą w Jaworznie przy ul. Galmany 6A, 43-600 Jaworzno, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000998530, NIP: 6322032434, REGON: 523457269 (dalej jako: „Spółka").
+                    Niniejszy serwis internetowy (dalej – wraz z podstronami – jako: &ldquo;Strona&rdquo;) został przygotowany na zlecenie spółki pod firmą <strong>CONSBRIDGE PRODUCTION SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</strong> z siedzibą w Jaworznie przy ul. Galmany 6A, 43-600 Jaworzno, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000998530, NIP: 6322032434, REGON: 523457269 (dalej jako: &ldquo;Spółka&rdquo;).
                   </p>
                 </div>
               </div>
