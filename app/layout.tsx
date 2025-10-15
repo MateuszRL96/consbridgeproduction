@@ -3,6 +3,7 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { ThemeProvider } from '@/contexts/ThemeContext'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -17,8 +18,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Consbridge Production - Fabryka Chemiczna | Produkcja Środków Chemicznych',
-  description: 'Nowoczesna fabryka chemiczna. Produkcja wysokiej jakości środków chemicznych dla przemysłu, rolnictwa i medycyny. Certyfikaty ISO, 5000m² powierzchni produkcyjnej, 25 lat doświadczenia.',
-  keywords: 'fabryka chemiczna, produkcja chemikaliów, środki chemiczne, chemikalia przemysłowe, produkcja na zamówienie, ISO 9001, laboratorium chemiczne, transport ADR',
+  description: 'Nowoczesna fabryka chemiczna w Jaworznie. Produkcja wysokiej jakości środków chemicznych dla przemysłu, rolnictwa i medycyny. Certyfikaty ISO, 5000m² powierzchni produkcyjnej, nowoczesne technologie.',
+  keywords: 'fabryka chemiczna, produkcja chemikaliów, środki chemiczne, chemikalia przemysłowe, produkcja na zamówienie, ISO 9001, kontrola jakości, transport ADR, Jaworzno',
 }
 
 export default function RootLayout({
@@ -27,13 +28,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="pl" className={`${inter.variable} ${poppins.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

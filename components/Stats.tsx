@@ -13,7 +13,7 @@ export default function Stats() {
     },
     {
       icon: <FaFlask />,
-      number: '15,000',
+      number: '5,000+',
       unit: 'ton',
       label: 'Roczna produkcja',
       color: 'from-blue-500 to-indigo-600',
@@ -35,13 +35,13 @@ export default function Stats() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-800 border-y border-slate-700">
+    <section className="py-20 bg-gradient-to-b from-slate-100 to-white dark:from-slate-900 dark:to-slate-800 border-y border-slate-200 dark:border-slate-700">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             Nasza Fabryka w Liczbach
           </h2>
-          <p className="text-slate-400 text-lg">
+          <p className="text-slate-600 dark:text-slate-400 text-lg">
             Nowoczesne zaplecze produkcyjne i najwyższe standardy jakości
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function Stats() {
               className="relative group"
             >
               {/* Card Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl border border-slate-700 group-hover:border-cyan-500/50 transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-white dark:bg-gradient-to-br dark:from-slate-800 dark:to-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 group-hover:border-cyan-500/50 transition-all duration-300 shadow-lg"></div>
               
               {/* Card Content */}
               <div className="relative p-8 text-center">
@@ -61,16 +61,16 @@ export default function Stats() {
                   {stat.icon}
                 </div>
                 <div className="flex items-baseline justify-center gap-1 mb-2">
-                  <div className="text-3xl md:text-4xl font-bold text-white">
+                  <div className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
                     {stat.number}
                   </div>
                   {stat.unit && (
-                    <div className="text-xl font-semibold text-cyan-400">
+                    <div className="text-xl font-semibold text-cyan-600 dark:text-cyan-400">
                       {stat.unit}
                     </div>
                   )}
                 </div>
-                <div className="text-sm md:text-base text-slate-400">
+                <div className="text-sm md:text-base text-slate-600 dark:text-slate-400">
                   {stat.label}
                 </div>
               </div>
@@ -82,22 +82,22 @@ export default function Stats() {
         </div>
 
         {/* Additional Info Bar */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-700">
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-200 dark:border-slate-700">
           <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-400">200+</div>
-            <div className="text-sm text-slate-400 mt-1">Pracowników</div>
+            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">50+</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Pracowników</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-400">50+</div>
-            <div className="text-sm text-slate-400 mt-1">Produktów</div>
+            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">30+</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Produktów</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-400">15</div>
-            <div className="text-sm text-slate-400 mt-1">Krajów eksportu</div>
+            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">10+</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Krajów eksportu</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-400">99.9%</div>
-            <div className="text-sm text-slate-400 mt-1">Czystość produktów</div>
+            <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">99.9%</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Czystość produktów</div>
           </div>
         </div>
       </div>

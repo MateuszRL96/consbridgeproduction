@@ -2,11 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { FaBars, FaTimes, FaPhone, FaEnvelope } from 'react-icons/fa'
+import Image from 'next/image'
+import { FaBars, FaTimes, FaPhone, FaEnvelope, FaSun, FaMoon } from 'react-icons/fa'
+import { useTheme } from '@/contexts/ThemeContext'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { theme, toggleTheme } = useTheme()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,23 +22,22 @@ export default function Header() {
   const navLinks = [
     { href: '/', label: 'Strona Główna' },
     { href: '/uslugi', label: 'Usługi' },
-    { href: '/o-nas', label: 'O Nas' },
     { href: '/kontakt', label: 'Kontakt' },
   ]
 
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-slate-900 text-white py-2 hidden md:block border-b border-slate-800">
+      <div className="bg-slate-900 dark:bg-slate-900 text-white py-2 hidden md:block border-b border-slate-800 dark:border-slate-800">
         <div className="container-custom flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:+48123456789" className="flex items-center gap-2 hover:text-cyan-400 transition">
+            <a href="tel:+48507070516" className="flex items-center gap-2 hover:text-cyan-400 transition">
               <FaPhone className="text-xs" />
-              <span>+48 123 456 789</span>
+              <span>+48 507 070 516</span>
             </a>
-            <a href="mailto:kontakt@consbridgeproduction.pl" className="flex items-center gap-2 hover:text-cyan-400 transition">
+            <a href="mailto:office@consbridgeproduction.pl" className="flex items-center gap-2 hover:text-cyan-400 transition">
               <FaEnvelope className="text-xs" />
-              <span>kontakt@consbridgeproduction.pl</span>
+              <span>office@consbridgeproduction.pl</span>
             </a>
           </div>
           <div className="text-slate-400">
@@ -56,14 +58,21 @@ export default function Header() {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform shadow-lg shadow-cyan-500/50">
-                CB
+              <div className="w-[72px] h-[72px] rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 bg-white shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 border-2 border-cyan-400/30 group-hover:border-cyan-400/60 p-0.5">
+                <Image 
+                  src="/photos/logo.png" 
+                  alt="Consbridge Production Logo" 
+                  width={72} 
+                  height={72}
+                  className="object-contain brightness-110 contrast-110"
+                  priority
+                />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl text-white leading-tight">
+                <span className="font-heading font-bold text-2xl text-white leading-tight">
                   Consbridge
                 </span>
-                <span className="text-xs text-cyan-400 font-medium tracking-wide">
+                <span className="text-sm text-cyan-400 font-medium tracking-wide">
                   PRODUCTION
                 </span>
               </div>
@@ -84,13 +93,22 @@ export default function Header() {
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <Link
-              href="/kontakt"
-              className="hidden lg:block bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-xl hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300"
-            >
-              Skontaktuj się
-            </Link>
+            {/* Theme Toggle & CTA */}
+            <div className="hidden lg:flex items-center gap-4">
+              <button
+                onClick={toggleTheme}
+                className="p-3 rounded-lg bg-slate-800 dark:bg-slate-800 hover:bg-slate-700 dark:hover:bg-slate-700 text-cyan-400 transition-all duration-300 hover:scale-110"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
+              </button>
+              <Link
+                href="/kontakt"
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-xl hover:shadow-cyan-500/50 hover:scale-105 transition-all duration-300"
+              >
+                Skontaktuj się
+              </Link>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -117,6 +135,22 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <button
+                    onClick={toggleTheme}
+                    className="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 transition-all"
+                  >
+                    {theme === 'dark' ? (
+                      <>
+                        <FaSun /> Tryb jasny
+                      </>
+                    ) : (
+                      <>
+                        <FaMoon /> Tryb ciemny
+                      </>
+                    )}
+                  </button>
+                </li>
                 <li>
                   <Link
                     href="/kontakt"

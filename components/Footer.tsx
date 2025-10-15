@@ -1,26 +1,33 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-slate-950 text-white border-t border-slate-800">
+    <footer className="bg-slate-900 dark:bg-slate-950 text-white border-t border-slate-700 dark:border-slate-800">
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/50">
-                CB
+              <div className="w-[72px] h-[72px] rounded-lg flex items-center justify-center bg-white shadow-lg shadow-cyan-500/20 border-2 border-cyan-400/30 p-0.5 hover:shadow-cyan-500/40 hover:border-cyan-400/60 transition-all duration-300">
+                <Image 
+                  src="/photos/logo.png" 
+                  alt="Consbridge Production Logo" 
+                  width={72} 
+                  height={72}
+                  className="object-contain brightness-110 contrast-110"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl leading-tight">
+                <span className="font-heading font-bold text-2xl leading-tight">
                   Consbridge
                 </span>
-                <span className="text-xs text-cyan-400 font-medium tracking-wide">
+                <span className="text-sm text-cyan-400 font-medium tracking-wide">
                   PRODUCTION
                 </span>
               </div>
@@ -56,11 +63,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/o-nas" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  O Nas
-                </a>
-              </li>
-              <li>
                 <a href="/kontakt" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
                   Kontakt
                 </a>
@@ -76,7 +78,7 @@ export default function Footer() {
               <li className="text-slate-400 text-sm">Środki dla Rolnictwa</li>
               <li className="text-slate-400 text-sm">Surowce Kosmetyczne</li>
               <li className="text-slate-400 text-sm">Surowce Farmaceutyczne</li>
-              <li className="text-slate-400 text-sm">Laboratorium R&D</li>
+              <li className="text-slate-400 text-sm">Kontrola Jakości</li>
               <li className="text-slate-400 text-sm">Logistyka ADR</li>
             </ul>
           </div>
@@ -88,20 +90,20 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-cyan-400 mt-1 flex-shrink-0" />
                 <span className="text-slate-400 text-sm">
-                  ul. Przykładowa 123<br />
-                  00-000 Warszawa, Polska
+                  Fryderyka Chopina 94<br />
+                  43-600 Jaworzno
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="text-cyan-400 flex-shrink-0" />
-                <a href="tel:+48123456789" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  +48 123 456 789
+                <a href="tel:+48507070516" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  +48 507 070 516
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-cyan-400 flex-shrink-0" />
-                <a href="mailto:kontakt@consbridgeproduction.pl" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  kontakt@consbridgeproduction.pl
+                <a href="mailto:office@consbridgeproduction.pl" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  office@consbridgeproduction.pl
                 </a>
               </li>
             </ul>
