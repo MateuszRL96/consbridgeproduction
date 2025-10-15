@@ -12,14 +12,14 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('dark')
+  const [theme, setTheme] = useState<Theme>('light')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)
-    // Ustaw dark mode od razu przy pierwszym załadowaniu
+    // Ustaw light mode od razu przy pierwszym załadowaniu
     const root = window.document.documentElement
-    root.classList.add('dark')
+    root.classList.add('light')
   }, [])
 
   useEffect(() => {
