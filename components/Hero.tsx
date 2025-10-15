@@ -35,11 +35,11 @@ export default function Hero() {
             </div>
             
             <h1 className="font-heading font-bold text-5xl md:text-6xl lg:text-7xl text-slate-900 dark:text-white leading-tight">
-              Zaawansowana
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-blue-600 to-teal-600 dark:from-cyan-400 dark:via-blue-400 dark:to-teal-400">
+              Zaawansowana{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-blue-600 to-teal-600 dark:from-cyan-400 dark:via-blue-400 dark:to-teal-400">
                 Produkcja Chemiczna
               </span>
-              dla Przemysłu
+              {' '}dla Przemysłu
             </h1>
 
             <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed max-w-2xl">
@@ -138,13 +138,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-cyan-600 dark:border-cyan-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-cyan-600 dark:bg-cyan-400 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

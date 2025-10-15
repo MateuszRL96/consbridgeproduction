@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
                 <div className="text-slate-700 dark:text-slate-300 leading-relaxed space-y-4">
                   <p>
-                    Administratorem Twoich danych osobowych przetwarzanych zgodnie z niniejszą Polityką Prywatności jest <strong>Consbridge Production spółka z ograniczoną odpowiedzialnością</strong> z siedzibą w Krakowie przy ul. Zabłocie 23/24, 30-701 Kraków, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy dla Krakowa-Śródmieścia w Krakowie, XI Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000864949, NIP: 6793206661 (dalej: „Administrator" lub „CP").
+                    Administratorem Twoich danych osobowych przetwarzanych zgodnie z niniejszą Polityką Prywatności jest <strong>CONSBRIDGE PRODUCTION SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</strong> z siedzibą w Jaworznie przy ul. Galmany 6A, 43-600 Jaworzno, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Katowice-Wschód w Katowicach, VIII Wydział Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000998530, NIP: 6322032434, REGON: 523457269 (dalej: „Administrator" lub „CP").
                   </p>
                 </div>
               </div>

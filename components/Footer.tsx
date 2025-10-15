@@ -14,12 +14,12 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-[72px] h-[72px] rounded-lg flex items-center justify-center bg-white shadow-lg shadow-cyan-500/20 border-2 border-cyan-400/30 p-0.5 hover:shadow-cyan-500/40 hover:border-cyan-400/60 transition-all duration-300">
+              <div className="w-[80px] h-[80px] rounded-lg flex items-center justify-center bg-white shadow-lg shadow-cyan-500/20 border-2 border-cyan-400/30 p-0.5 hover:shadow-cyan-500/40 hover:border-cyan-400/60 transition-all duration-300">
                 <Image 
                   src="/photos/logo.png" 
                   alt="Consbridge Production Logo" 
-                  width={72} 
-                  height={72}
+                  width={80} 
+                  height={80}
                   className="object-contain brightness-110 contrast-110"
                 />
               </div>

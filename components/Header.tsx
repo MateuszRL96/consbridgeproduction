@@ -50,20 +50,20 @@ export default function Header() {
       <header 
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled 
-            ? 'bg-slate-900 shadow-lg shadow-cyan-500/10 py-3 border-b border-slate-800' 
-            : 'bg-slate-900/95 backdrop-blur-sm py-4 border-b border-slate-800'
+            ? 'bg-slate-900 shadow-lg shadow-cyan-500/10 py-1 border-b border-slate-800' 
+            : 'bg-slate-900/95 backdrop-blur-sm py-1 border-b border-slate-800'
         }`}
       >
         <nav className="container-custom">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-[72px] h-[72px] rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 bg-white shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 border-2 border-cyan-400/30 group-hover:border-cyan-400/60 p-0.5">
+              <div className="w-[80px] h-[80px] rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300 bg-white shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 border-2 border-cyan-400/30 group-hover:border-cyan-400/60 p-0.5">
                 <Image 
                   src="/photos/logo.png" 
                   alt="Consbridge Production Logo" 
-                  width={72} 
-                  height={72}
+                  width={80} 
+                  height={80}
                   className="object-contain brightness-110 contrast-110"
                   priority
                 />
