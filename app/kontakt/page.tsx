@@ -34,11 +34,11 @@ export default function ContactPage() {
                 <span className="font-semibold text-slate-900 dark:text-white">+48 507 070 516</span>
               </a>
               <a 
-                href="mailto:office@consbridgeproduction.pl"
+                href="mailto:OfficeProduction@consbridgeproduction.pl"
                 className="bg-cyan-600/20 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-cyan-600/30 border border-cyan-500/50 transition-all flex items-center gap-2 hover:shadow-lg hover:shadow-cyan-500/20"
               >
                 <FaEnvelope />
-                <span className="font-semibold text-slate-900 dark:text-white">office@consbridgeproduction.pl</span>
+                <span className="font-semibold text-slate-900 dark:text-white">OfficeProduction@consbridgeproduction.pl</span>
               </a>
             </div>
           </div>
@@ -61,8 +61,8 @@ export default function ContactPage() {
               <div className="text-center p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                 <FaEnvelope className="text-4xl text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
                 <h3 className="font-bold text-slate-900 dark:text-white mb-2">Email</h3>
-                <a href="mailto:office@consbridgeproduction.pl" className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 text-sm">
-                  office@consbridgeproduction.pl
+                <a href="mailto:OfficeProduction@consbridgeproduction.pl" className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 text-sm break-all">
+                  OfficeProduction@consbridgeproduction.pl
                 </a>
               </div>
               
@@ -158,7 +158,7 @@ export default function ContactPage() {
                 },
                 {
                   q: "Jak mogę złożyć reklamację?",
-                  a: "Reklamacje prosimy kierować na email: office@consbridgeproduction.pl lub telefonicznie."
+                  a: "Reklamacje prosimy kierować na email: OfficeProduction@consbridgeproduction.pl lub telefonicznie."
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">

@@ -102,8 +102,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-cyan-400 flex-shrink-0" />
-                <a href="mailto:office@consbridgeproduction.pl" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  office@consbridgeproduction.pl
+                <a href="mailto:OfficeProduction@consbridgeproduction.pl" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  OfficeProduction@consbridgeproduction.pl
                 </a>
               </li>
             </ul>
@@ -119,13 +119,18 @@ export default function Footer() {
               © {currentYear} Consbridge Production. Wszelkie prawa zastrzeżone.
             </p>
             <div className="flex gap-6">
-              <Link href="#" className="hover:text-cyan-400 transition-colors">
+              <Link href="/polityka-prywatnosci" className="hover:text-cyan-400 transition-colors">
                 Polityka Prywatności
               </Link>
-              <Link href="#" className="hover:text-cyan-400 transition-colors">
+              <Link href="/regulamin" className="hover:text-cyan-400 transition-colors">
                 Regulamin
               </Link>
             </div>
+          </div>
+          <div className="text-center mt-4 pt-4 border-t border-slate-800">
+            <p className="text-xs text-slate-600">
+              Wykonane przez mkcup2.com
+            </p>
           </div>
         </div>
       </div>

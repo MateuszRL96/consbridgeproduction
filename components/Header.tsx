@@ -35,9 +35,9 @@ export default function Header() {
               <FaPhone className="text-xs" />
               <span>+48 507 070 516</span>
             </a>
-            <a href="mailto:office@consbridgeproduction.pl" className="flex items-center gap-2 hover:text-cyan-400 transition">
+            <a href="mailto:OfficeProduction@consbridgeproduction.pl" className="flex items-center gap-2 hover:text-cyan-400 transition">
               <FaEnvelope className="text-xs" />
-              <span>office@consbridgeproduction.pl</span>
+              <span>OfficeProduction@consbridgeproduction.pl</span>
             </a>
           </div>
           <div className="text-slate-400">
