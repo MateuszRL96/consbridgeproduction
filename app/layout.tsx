@@ -29,7 +29,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl" className={`${inter.variable} ${poppins.variable}`} suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased bg-gradient-to-b from-white via-slate-50 to-slate-100 text-slate-900 dark:bg-gradient-to-b dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-white">
+        {/* Global honeycomb background */}
+        <div
+          className="pointer-events-none fixed inset-0 -z-10"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52'%3E%3Cpath d='M30 1 L59 16 L59 36 L30 51 L1 36 L1 16 Z' fill='none' stroke='rgba(37,99,235,0.08)' stroke-width='1'/%3E%3C/svg%3E\")",
+            backgroundSize: '60px 52px'
+          }}
+        />
         <ThemeProvider>
           <Header />
           <main className="min-h-screen">

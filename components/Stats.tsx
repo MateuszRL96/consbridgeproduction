@@ -1,35 +1,67 @@
 'use client'
 
 import { FaIndustry, FaFlask, FaCertificate, FaTruck, FaShieldAlt, FaAtom } from 'react-icons/fa'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Stats() {
+  const { translations } = useTranslation()
+
+  const getStatLabels = () => {
+    if (translations.header.nav.home === 'Home') {
+      // English
+      return [
+        'Production area',
+        'Annual production',
+        'Quality certificate',
+        'Safety control',
+        'Employees',
+        'Products',
+        'Export countries',
+        'Product purity'
+      ]
+    }
+    // Polish
+    return [
+      'Powierzchnia produkcyjna',
+      'Roczna produkcja',
+      'Certyfikat jakości',
+      'Kontrola bezpieczeństwa',
+      'Pracowników',
+      'Produktów',
+      'Krajów eksportu',
+      'Czystość produktów'
+    ]
+  }
+
+  const labels = getStatLabels()
+
   const stats = [
     {
       icon: <FaIndustry />,
       number: '5,000',
       unit: 'm²',
-      label: 'Powierzchnia produkcyjna',
+      label: labels[0],
       color: 'from-cyan-500 to-blue-600',
     },
     {
       icon: <FaFlask />,
       number: '5,000+',
       unit: 'ton',
-      label: 'Roczna produkcja',
+      label: labels[1],
       color: 'from-blue-500 to-indigo-600',
     },
     {
       icon: <FaCertificate />,
       number: 'ISO 9001',
       unit: '',
-      label: 'Certyfikat jakości',
+      label: labels[2],
       color: 'from-teal-500 to-emerald-600',
     },
     {
       icon: <FaShieldAlt />,
       number: '24/7',
       unit: '',
-      label: 'Kontrola bezpieczeństwa',
+      label: labels[3],
       color: 'from-indigo-500 to-purple-600',
     },
   ]
@@ -39,10 +71,10 @@ export default function Stats() {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
-            Nasza Fabryka w Liczbach
+            {translations.header.nav.home === 'Home' ? 'Our Factory in Numbers' : 'Nasza Fabryka w Liczbach'}
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg">
-            Nowoczesne zaplecze produkcyjne i najwyższe standardy jakości
+            {translations.header.nav.home === 'Home' ? 'Modern production facilities and highest quality standards' : 'Nowoczesne zaplecze produkcyjne i najwyższe standardy jakości'}
           </p>
         </div>
         
@@ -85,19 +117,19 @@ export default function Stats() {
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-200 dark:border-slate-700">
           <div className="text-center">
             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">50+</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Pracowników</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">{labels[4]}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">30+</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Produktów</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">{labels[5]}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">10+</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Krajów eksportu</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">{labels[6]}</div>
           </div>
           <div className="text-center">
             <div className="text-2xl font-bold text-cyan-600 dark:text-cyan-400">99.9%</div>
-            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">Czystość produktów</div>
+            <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">{labels[7]}</div>
           </div>
         </div>
       </div>

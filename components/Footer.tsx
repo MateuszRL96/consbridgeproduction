@@ -3,9 +3,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { translations } = useTranslation()
 
   return (
     <footer className="bg-slate-900 dark:bg-slate-950 text-white border-t border-slate-700 dark:border-slate-800">
@@ -33,7 +35,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Nowoczesna fabryka chemiczna. Produkcja wysokiej jakości środków chemicznych dla przemysłu, rolnictwa i medycyny.
+              {translations.footer.description}
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-cyan-600 hover:shadow-lg hover:shadow-cyan-500/50 transition-all">
@@ -50,21 +52,26 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4 text-white">Szybkie Linki</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-white">{translations.footer.quickLinks}</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  Strona Główna
+                  {translations.footer.links.home}
                 </Link>
               </li>
               <li>
                 <Link href="/uslugi" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  Usługi
+                  {translations.footer.links.services}
+                </Link>
+              </li>
+              <li>
+                <Link href="/kariera" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  {translations.footer.links.career}
                 </Link>
               </li>
               <li>
                 <Link href="/kontakt" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  Kontakt
+                  {translations.footer.links.contact}
                 </Link>
               </li>
             </ul>
@@ -72,38 +79,34 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4 text-white">Zakres Produkcji</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-white">{translations.footer.production}</h3>
             <ul className="space-y-3">
-              <li className="text-slate-400 text-sm">Chemikalia Przemysłowe</li>
-              <li className="text-slate-400 text-sm">Środki dla Rolnictwa</li>
-              <li className="text-slate-400 text-sm">Surowce Kosmetyczne</li>
-              <li className="text-slate-400 text-sm">Surowce Farmaceutyczne</li>
-              <li className="text-slate-400 text-sm">Kontrola Jakości</li>
-              <li className="text-slate-400 text-sm">Logistyka ADR</li>
+              {translations.footer.scope.map((item, index) => (
+                <li key={index} className="text-slate-400 text-sm">{item}</li>
+              ))}
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-heading font-semibold text-lg mb-4 text-white">Kontakt</h3>
+            <h3 className="font-heading font-semibold text-lg mb-4 text-white">{translations.footer.contactTitle}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-cyan-400 mt-1 flex-shrink-0" />
                 <span className="text-slate-400 text-sm">
-                  Fryderyka Chopina 94<br />
-                  43-600 Jaworzno
+                  {translations.contact.address}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="text-cyan-400 flex-shrink-0" />
-                <a href="tel:+48507070516" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  +48 507 070 516
+                <a href={`tel:${translations.header.phone.replace(/\s/g, '')}`} className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  {translations.header.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-cyan-400 flex-shrink-0" />
-                <a href="mailto:OfficeProduction@consbridgeproduction.pl" className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
-                  OfficeProduction@consbridgeproduction.pl
+                <a href={`mailto:${translations.header.email}`} className="text-slate-400 hover:text-cyan-400 transition-colors text-sm">
+                  {translations.header.email}
                 </a>
               </li>
             </ul>
@@ -116,20 +119,20 @@ export default function Footer() {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
             <p>
-              © {currentYear} Consbridge Production. Wszelkie prawa zastrzeżone.
+              © {currentYear} Consbridge Production. {translations.footer.copyright}
             </p>
             <div className="flex gap-6">
               <Link href="/polityka-prywatnosci" className="hover:text-cyan-400 transition-colors">
-                Polityka Prywatności
+                {translations.footer.privacy}
               </Link>
               <Link href="/regulamin" className="hover:text-cyan-400 transition-colors">
-                Regulamin
+                {translations.footer.terms}
               </Link>
             </div>
           </div>
           <div className="text-center mt-4 pt-4 border-t border-slate-800">
             <p className="text-xs text-slate-600">
-              Wykonane przez mkcup2.com
+              {translations.footer.by}
             </p>
           </div>
         </div>

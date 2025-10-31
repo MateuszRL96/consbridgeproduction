@@ -1,0 +1,577 @@
+{
+  "header": {
+    "phone": "+48 507 070 516",
+    "email": "OfficeProduction@consbridgeproduction.pl",
+    "hours": "Mon - Fri: 8:00 - 16:00",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "career": "Career",
+      "contact": "Contact"
+    },
+    "cta": "Contact Us",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "career": "Career",
+      "contact": "Contact"
+    }
+  },
+  "career": {
+    "badge": "Join Our Team",
+    "title": "Career at Consbridge Production",
+    "description": "We are looking for specialists who want to develop modern chemical production together with an experienced team.",
+    "cta": "Send Application",
+    "positionsSection": {
+      "title": "Current job openings",
+      "description": "Find the position that matches your experience and join our production team.",
+      "apply": "Apply",
+      "fallbackLink": "/career"
+    },
+    "positions": [
+      {
+        "title": "Forklift Operator",
+        "link": "/career?position=forklift-operator",
+        "requirements": [
+          "UDT license for forklifts.",
+          "Minimum 1 year of experience operating forklifts.",
+          "Willingness to work in a shift system.",
+          "Attention to safety and warehouse organization."
+        ]
+      },
+      {
+        "title": "Chemical Production Technician",
+        "link": "/career?position=chemical-production-technician",
+        "requirements": [
+          "Technical or chemical education.",
+          "Knowledge of safety procedures in a production facility.",
+          "Ability to work with process documentation.",
+          "Openness to teamwork and continuous improvement."
+        ]
+      }
+    ],
+    "form": {
+      "title": "Application Form",
+      "name": "Full Name *",
+      "email": "Email Address *",
+      "message": "Short Message",
+      "messagePlaceholder": "Write a few words about yourself...",
+      "cv": "Attach CV (PDF) *",
+      "cvHelp": "Attach a PDF file up to 10 MB.",
+      "consent": "I consent to the processing of my personal data for recruitment purposes. *",
+      "submit": "Send Application",
+      "sending": "Sending...",
+      "success": "✓ Thank you! Your application has been sent.",
+      "required": "* Required fields. Your data is safe and used only for recruitment purposes.",
+      "errors": {
+        "type": "Only PDF files are allowed.",
+        "size": "The file cannot be larger than 10 MB.",
+        "missing": "Attach a PDF file before submitting the form."
+      }
+    }
+  },
+  "features": {
+    "badge": "Production Capabilities",
+    "title": "Our Production Capabilities",
+    "description": "Comprehensive production of chemical products at the highest level",
+    "items": {
+      "industrial": {
+        "title": "Industrial Chemicals",
+        "desc": "Production of chemicals for heavy and light industry",
+        "link": "#chemicals"
+      },
+      "agriculture": {
+        "title": "Agricultural Products",
+        "desc": "Fertilizers, pesticides and plant protection products",
+        "link": "#fertilizers"
+      },
+      "pharma": {
+        "title": "Pharmaceutical Raw Materials",
+        "desc": "Production compliant with GMP norms and medical standards",
+        "link": "#pharmaceuticals"
+      },
+      "cosmetics": {
+        "title": "Cosmetic Raw Materials",
+        "desc": "Active ingredients for the cosmetics industry",
+        "link": "#cosmetics"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "desc": "Tests and analyses of every batch of products",
+        "link": "#testing"
+      },
+      "transport": {
+        "title": "ADR Logistics",
+        "desc": "Transport of dangerous materials with ADR certificate",
+        "link": "#transport"
+      }
+    },
+    "cta": "View Full Production Offer",
+    "moreInfo": "Learn More"
+  },
+  "about": {
+    "badge": "Our Advantages",
+    "title": "Why Our Factory?",
+    "description": "Modern production technologies and highest quality standards",
+    "items": {
+      "iso": {
+        "title": "ISO Certificates",
+        "desc": "ISO 9001, ISO 14001 and EU compliance"
+      },
+      "logistics": {
+        "title": "ADR Logistics",
+        "desc": "Safe transport of dangerous materials"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "desc": "Own laboratory and testing of every batch"
+      },
+      "safety": {
+        "title": "Safety",
+        "desc": "Highest OSH and environmental standards"
+      },
+      "rnd": {
+        "title": "R&D Laboratory",
+        "desc": "Modern research and development laboratory for innovation and testing"
+      }
+    }
+  },
+  "cta": {
+    "title": "Need Chemical Production?",
+    "description": "Contact us today and learn about the possibilities of our factory. We offer custom production and technical advice.",
+    "button": "Contact Now",
+    "phone": "Call Us"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "Comprehensive Solutions for Your Industry",
+    "description": "We offer a wide range of products and services tailored to the needs of industry, agriculture, medicine and science.",
+    "items": {
+      "chemicals": {
+        "title": "Chemical Products",
+        "desc": "Wide range of chemical products for industry, science and photography. Highest quality and safety.",
+        "features": ["Industrial chemicals", "Synthetic resins", "Plastics", "Preservative preparations"]
+      },
+      "fertilizers": {
+        "title": "Fertilizers and Protection",
+        "desc": "Effective fertilizers, pesticides and herbicides for agriculture, horticulture and forestry.",
+        "features": ["Nitrogen fertilizers", "Pesticides", "Fungicides", "Herbicides"]
+      },
+      "pharma": {
+        "title": "Pharmaceutical Products",
+        "desc": "Pharmaceutical, veterinary and dietary supplement preparations of the highest quality.",
+        "features": ["Medical preparations", "Veterinary products", "Dietary supplements", "Disinfectants"]
+      },
+      "cosmetics": {
+        "title": "Cosmetics and Detergents",
+        "desc": "Professional cosmetics, soaps, detergents and care preparations for industry and consumers.",
+        "features": ["Industrial cosmetics", "Detergents", "Essential oils", "Toiletry preparations"]
+      },
+      "research": {
+        "title": "Research and Analysis",
+        "desc": "Comprehensive research services, laboratory analyses and product quality control.",
+        "features": ["Scientific research", "Laboratory analyses", "Quality control", "Certification"]
+      },
+      "transport": {
+        "title": "Transport and Logistics",
+        "desc": "Professional transport, packaging and storage of chemical goods in accordance with standards.",
+        "features": ["Specialist transport", "Storage", "Packaging", "International logistics"]
+      }
+    },
+    "moreInfo": "Learn More"
+  },
+  "products": {
+    "badge": "Our Products",
+    "title": "Wide Range of Products and Services",
+    "description": "We offer over 500 products from various categories, tailored to the needs of your industry.",
+    "categories": {
+      "all": "All",
+      "chemical": "Chemicals",
+      "agriculture": "Agriculture",
+      "pharma": "Pharmacy",
+      "cosmetics": "Cosmetics",
+      "research": "Research"
+    },
+    "items": {
+      "industrial_chemicals": {
+        "name": "Industrial Chemical Products",
+        "desc": "High quality chemicals for industry and science",
+        "features": ["Acids and bases", "Solvents", "Catalysts", "Reagents"]
+      },
+      "resins": {
+        "name": "Resins and Plastics",
+        "desc": "Unprocessed synthetic resins and plastics",
+        "features": ["Epoxy resins", "Polyurethanes", "Polymers", "Additives"]
+      },
+      "fertilizers": {
+        "name": "Nitrogen Fertilizers",
+        "desc": "Effective fertilizers for agriculture and horticulture",
+        "features": ["Urea", "Ammonium nitrate", "RSM", "Multi-component fertilizers"]
+      },
+      "crop_protection": {
+        "name": "Plant Protection Products",
+        "desc": "Pesticides, fungicides and herbicides",
+        "features": ["Pesticides", "Fungicides", "Herbicides", "Insecticides"]
+      },
+      "pharma_preparations": {
+        "name": "Pharmaceutical Preparations",
+        "desc": "Medical and veterinary products",
+        "features": ["Medicines", "Veterinary preparations", "Disinfectants", "Antiseptics"]
+      },
+      "supplements": {
+        "name": "Dietary Supplements",
+        "desc": "High quality supplements and biochemical preparations",
+        "features": ["Vitamins", "Minerals", "Probiotics", "Protein preparations"]
+      },
+      "cosmetics_pro": {
+        "name": "Professional Cosmetics",
+        "desc": "Cosmetic products for industry and consumers",
+        "features": ["Perfumes", "Essential oils", "Creams", "Balms"]
+      },
+      "detergents": {
+        "name": "Detergents and Soaps",
+        "desc": "Cleaning agents and care preparations",
+        "features": ["Soaps", "Detergents", "Bleaching agents", "Polishing preparations"]
+      },
+      "lab_services": {
+        "name": "Laboratory Services",
+        "desc": "Comprehensive scientific research and analyses",
+        "features": ["Chemical analyses", "Quality testing", "Certification", "Consultations"]
+      }
+    },
+    "cta": "Ask About Product",
+    "notFound": "Didn't find what you're looking for? Contact us!",
+    "contactExpert": "Contact an Expert"
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Get in Touch with Us",
+    "description": "Have questions? Want to place an order? Our team is ready to help!",
+    "form": {
+      "title": "Contact Form",
+      "name": "Full Name *",
+      "namePlaceholder": "John Smith",
+      "email": "Email *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+48 123 456 789",
+      "company": "Company",
+      "companyPlaceholder": "Company name",
+      "subject": "Subject *",
+      "subjectPlaceholder": "Choose a subject",
+      "message": "Message *",
+      "messagePlaceholder": "Describe your inquiry...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "✓ Thank you! Your message has been sent. We'll get in touch soon.",
+      "required": "* Required fields. Your data is safe and will not be shared with third parties.",
+      "options": {
+        "select": "Choose a subject",
+        "products": "Product Inquiry",
+        "order": "Place an Order",
+        "research": "Research Services",
+        "transport": "Transport and Logistics",
+        "cooperation": "Cooperation",
+        "other": "Other"
+      }
+    },
+    "address": "Fryderyka Chopina 94, 43-600 Jaworzno",
+    "hours": "Mon - Fri: 8:00 - 16:00"
+  },
+  "servicesPage": {
+    "title": "Our Production Services",
+    "description": "Comprehensive production of chemical products for industry, agriculture and medicine",
+    "heroProducts": "30+ Products",
+    "heroCategories": "6 Categories",
+    "heroCapacity": "5,000+ tons/year",
+    "sectionTitle": "Our Production Range",
+    "sectionDescription": "Modern technologies and highest quality standards",
+    "services": [
+      {
+        "title": "Industrial Chemicals",
+        "description": "Production of high quality chemicals for heavy and light industry",
+        "features": ["Acids and bases", "Solvents", "Chemical reagents"]
+      },
+      {
+        "title": "Agricultural Products",
+        "description": "Fertilizers, pesticides and plant protection products compliant with EU standards",
+        "features": ["Mineral fertilizers", "Pesticides", "Growth regulators"]
+      },
+      {
+        "title": "Pharmaceutical Raw Materials",
+        "description": "Production compliant with GMP standards and medical standards",
+        "features": ["API (active substances)", "Auxiliary materials", "GMP certificates"]
+      },
+      {
+        "title": "Cosmetic Raw Materials",
+        "description": "Active ingredients for the cosmetics and care industry",
+        "features": ["Emulsifiers", "Preservatives", "Active substances"]
+      },
+      {
+        "title": "Quality Control",
+        "description": "Comprehensive tests and analyses of each batch of products",
+        "features": ["Laboratory tests", "Quality certificates", "Documentation"]
+      },
+      {
+        "title": "ADR Logistics",
+        "description": "Safe transport of dangerous materials with ADR certificate",
+        "features": ["ADR transport", "Storage", "Delivery 24-48h"]
+      }
+    ],
+    "whyUs": "Why Choose Us?",
+    "whyUsDescription": "Modern production technologies and highest quality standards",
+    "packaging": {
+      "title": "Packaging and Confectionery",
+      "description": "Professional chemical product packaging services with full logistics support",
+      "features": [
+        "Packaging in various containers",
+        "Labeling and printing",
+        "Sterile packaging for pharmaceutical products",
+        "International shipping readiness"
+      ]
+    },
+    "production": {
+      "title": "Production Capacity",
+      "description": "Advanced production lines capable of handling large volumes",
+      "stats": [
+        {
+          "label": "Production capacity",
+          "value": "5,000+",
+          "unit": "tons/year"
+        },
+        {
+          "label": "Production lines",
+          "value": "12",
+          "unit": "modern lines"
+        },
+        {
+          "label": "Technical staff",
+          "value": "45+",
+          "unit": "specialists"
+        },
+        {
+          "label": "Operating hours",
+          "value": "24/7",
+          "unit": "production possible"
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "icon": "⚡",
+        "title": "Fast Delivery",
+        "description": "Delivery in 24-48h throughout Poland"
+      },
+      {
+        "icon": "🎯",
+        "title": "Technical Advice",
+        "description": "Free consultations with our specialists"
+      },
+      {
+        "icon": "📋",
+        "title": "Quality Certificates",
+        "description": "ISO 9001, ISO 14001, ISO 45001"
+      },
+      {
+        "icon": "💰",
+        "title": "Competitive Prices",
+        "description": "Best ratio of quality to price"
+      },
+      {
+        "icon": "🔒",
+        "title": "Safety",
+        "description": "Compliance with EU standards and Polish law"
+      },
+      {
+        "icon": "📞",
+        "title": "24/7 Support",
+        "description": "We are always at your disposal"
+      },
+      {
+        "icon": "🧪",
+        "title": "R&D Laboratory",
+        "description": "Modern research and development laboratory for innovation and testing"
+      }
+    ],
+    "cooperation": "How Does Cooperation Look?",
+    "cooperationDescription": "Simple and transparent process from inquiry to delivery",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Inquiry",
+        "description": "Contact us by phone or through the form"
+      },
+      {
+        "step": "02",
+        "title": "Quote",
+        "description": "You will receive a personalized quote within 24h"
+      },
+      {
+        "step": "03",
+        "title": "Order",
+        "description": "Order confirmation and product preparation"
+      },
+      {
+        "step": "04",
+        "title": "Delivery",
+        "description": "Fast and safe delivery to your company"
+      }
+    ],
+    "scope": "Production Scope",
+    "scopeDescription": "We specialize in comprehensive chemical production"
+  },
+  "contactPage": {
+    "title": "Get in Touch with the Factory",
+    "description": "We are at your disposal - we will answer all questions about production",
+    "quickContact": "Quick Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "hours": "Hours",
+    "addressText": "Fryderyka Chopina 94, 43-600 Jaworzno",
+    "hoursText": "Mon-Fri: 8:00 - 18:00<br/>Sat: 9:00 - 14:00",
+    "directions": "How to Get There?",
+    "directionsDescription": "Factory is located in Jaworzno - convenient access from the entire region",
+    "transport": [
+      {
+        "icon": "🚗",
+        "title": "By Car",
+        "description": "Parking for clients and suppliers available at the factory. Entrance from Fryderyka Chopina Street. Easy access from the A4 highway."
+      },
+      {
+        "icon": "🚌",
+        "title": "Public Transport",
+        "description": "Bus stop near the factory. Connections from Jaworzno center and surrounding towns."
+      },
+      {
+        "icon": "🚚",
+        "title": "Heavy Transport",
+        "description": "Separate maneuvering area for trucks. Loading ramp available 24/7. Please notify in advance."
+      }
+    ],
+    "faq": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "q": "What is the response time to an inquiry?",
+        "a": "We respond to all inquiries within 24 business hours."
+      },
+      {
+        "q": "Can I visit the factory?",
+        "a": "Yes, we welcome you! Please arrange a visit in advance by phone for safety reasons."
+      },
+      {
+        "q": "Do you offer technical support?",
+        "a": "Yes, our technical department provides free advice to all clients."
+      },
+      {
+        "q": "How can I file a complaint?",
+        "a": "Please send complaints to: OfficeProduction@consbridgeproduction.pl or by phone."
+      }
+    ]
+  },
+  "pageDescriptions": {
+    "aboutCompany": "Consbridge Production is a modern chemical manufacturing plant specialized in the production of high-quality chemical products. We have advanced production lines, a quality control system and ISO certificates. Since 2022 we have been providing solutions for industry, agriculture and medicine."
+  },
+  "productClasses": {
+    "fullScope": "Full Range of Operations",
+    "productClasses": "Product Classes and Services",
+    "comprehensiveOffer": "Comprehensive production offer in compliance with international quality standards",
+    "class1": {
+      "title": "Chemical Products",
+      "subtitle": "Industry, Agriculture, Science",
+      "items": [
+        "Fertilizers and fertilizer mixes (including nitrogen fertilizers)",
+        "Chemical products used in industry and science",
+        "Chemical products used in photography",
+        "Chemical preparations for use in the food industry",
+        "Chemical agents used in agriculture, horticulture and forestry",
+        "Unprocessed synthetic resins and unprocessed plastics",
+        "Chemical preparations for preserving food items",
+        "Tanning substances",
+        "Dextrin (glue), glues and adhesive preparations intended for industry",
+        "Cleaning chemicals"
+      ]
+    },
+    "class3": {
+      "title": "Cosmetics and Detergents",
+      "subtitle": "Care and Cleanliness",
+      "items": [
+        "Soaps and detergents",
+        "Bleaching agents used in laundry (ultramarine)",
+        "Preparations for bleaching, renewal and polishing",
+        "Scrubbing substances",
+        "Perfume products and perfumes for industrial applications",
+        "Cosmetics and beauty care cosmetics",
+        "Essential oils",
+        "Tooth care preparations",
+        "Toilet preparations"
+      ]
+    },
+    "class5": {
+      "title": "Pharmacy and Medicine",
+      "subtitle": "Health and Protection",
+      "items": [
+        "Pesticides",
+        "Pharmaceutical, medical and veterinary preparations",
+        "Disinfectants and antiseptic agents",
+        "Food for medical diets",
+        "Hygienic preparations for medical use",
+        "Biochemical preparations for medical use",
+        "Dietary supplements",
+        "Plasters, dressing materials and medical materials",
+        "Dental materials for filling and repairing teeth",
+        "Decontaminating, weed-killing and fungicidal agents",
+        "Therapeutic toilet preparations"
+      ]
+    },
+    "class39_42": {
+      "title": "Specialist Services",
+      "subtitle": "Transport and Research",
+      "class39": {
+        "title": "Class 39 - Transport and Logistics",
+        "items": [
+          "Transport of chemical materials",
+          "Packaging and storage of goods",
+          "Organization of transport and travel"
+        ]
+      },
+      "class42": {
+        "title": "Class 42 - Research and Analysis",
+        "items": [
+          "Scientific research and analysis",
+          "Research work on products",
+          "Scientific and industrial research",
+          "Scientific and technological services",
+          "Laboratory analysis",
+          "Quality control and authentication services"
+        ]
+      }
+    },
+    "additionalInfo": "Comprehensive Solutions for Your Industry",
+    "additionalDescription": "Our factory offers a complete range of chemical products and services in compliance with international quality standards. We have ISO certificates, our own research laboratory and the possibility of ADR transport. Each product undergoes rigorous quality control.",
+    "askAboutDetails": "Ask About Production Details"
+  },
+  "footer": {
+    "description": "Modern chemical factory. Production of high quality chemical products for industry, agriculture and medicine.",
+    "quickLinks": "Quick Links",
+    "production": "Production Scope",
+    "contactTitle": "Contact",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "by": "Made by mkcup2.com",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "scope": [
+      "Industrial Chemicals",
+      "Agricultural Products",
+      "Cosmetic Raw Materials",
+      "Pharmaceutical Raw Materials",
+      "Quality Control",
+      "ADR Logistics"
+    ]
+  }
+}

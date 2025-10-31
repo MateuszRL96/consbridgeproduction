@@ -1,12 +1,12 @@
+'use client'
+
 import Contact from '@/components/Contact'
+import { useTranslation } from '@/hooks/useTranslation'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 
-export const metadata = {
-  title: 'Kontakt - Consbridge Production | Fabryka Chemiczna Jaworzno',
-  description: 'Skontaktuj się z fabryką chemiczną w Jaworznie. Adres: ul. Fryderyka Chopina 94, 43-600 Jaworzno. Telefon: +48 507 070 516',
-}
-
 export default function ContactPage() {
+  const { t, translations } = useTranslation()
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -20,10 +20,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-500 bg-clip-text text-transparent">
-              Skontaktuj Się z Fabryką
+              {t('contactPage.title')}
             </h1>
             <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8">
-              Jesteśmy do Twojej dyspozycji - odpowiemy na wszystkie pytania dotyczące produkcji
+              {t('contactPage.description')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
@@ -52,7 +52,7 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                 <FaPhone className="text-4xl text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 dark:text-white mb-2">Telefon</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-2">{t('contactPage.phone')}</h3>
                 <a href="tel:+48507070516" className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300">
                   +48 507 070 516
                 </a>
@@ -60,7 +60,7 @@ export default function ContactPage() {
               
               <div className="text-center p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                 <FaEnvelope className="text-4xl text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 dark:text-white mb-2">Email</h3>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-2">{t('contactPage.email')}</h3>
                 <a href="mailto:OfficeProduction@consbridgeproduction.pl" className="text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 text-sm break-all">
                   OfficeProduction@consbridgeproduction.pl
                 </a>
@@ -68,20 +68,18 @@ export default function ContactPage() {
               
               <div className="text-center p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                 <FaMapMarkerAlt className="text-4xl text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 dark:text-white mb-2">Adres</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm">
-                  ul. Fryderyka Chopina 94<br />
-                  43-600 Jaworzno
-                </p>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-2">{t('contactPage.address')}</h3>
+                <p className="text-slate-700 dark:text-slate-300 text-sm"
+                   dangerouslySetInnerHTML={{__html: t('contactPage.addressText').replace(/,/g, '<br/>') }} 
+                />
               </div>
               
               <div className="text-center p-6 bg-white dark:bg-slate-900 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                 <FaClock className="text-4xl text-cyan-600 dark:text-cyan-400 mx-auto mb-4" />
-                <h3 className="font-bold text-slate-900 dark:text-white mb-2">Godziny</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm">
-                  Pn-Pt: 8:00 - 18:00<br />
-                  Sb: 9:00 - 14:00
-                </p>
+                <h3 className="font-bold text-slate-900 dark:text-white mb-2">{t('contactPage.hours')}</h3>
+                <p className="text-slate-700 dark:text-slate-300 text-sm"
+                   dangerouslySetInnerHTML={{__html: t('contactPage.hoursText')}}
+                />
               </div>
             </div>
           </div>
@@ -96,39 +94,22 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-4 text-slate-900 dark:text-white">
-              Jak Dojechać?
+              {t('contactPage.directions')}
             </h2>
             <p className="text-center text-slate-700 dark:text-slate-300 mb-12">
-              Fabryka znajduje się w Jaworznie - dogodny dojazd z całego regionu
+              {t('contactPage.directionsDescription')}
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
-                <div className="text-5xl mb-4">🚗</div>
-                <h3 className="font-bold text-slate-900 dark:text-white mb-3 text-xl">Samochodem</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-                  Parking dla klientów i dostawców dostępny na terenie fabryki. 
-                  Wjazd od ul. Fryderyka Chopina. Dogodny dojazd z autostrady A4.
-                </p>
-              </div>
-              
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
-                <div className="text-5xl mb-4">🚌</div>
-                <h3 className="font-bold text-slate-900 dark:text-white mb-3 text-xl">Komunikacją</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-                  Przystanek autobusowy w pobliżu fabryki. 
-                  Połączenia z centrum Jaworzna i okolicznych miejscowości.
-                </p>
-              </div>
-              
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
-                <div className="text-5xl mb-4">🚚</div>
-                <h3 className="font-bold text-slate-900 dark:text-white mb-3 text-xl">Transport Ciężki</h3>
-                <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-                  Wydzielony plac manewrowy dla ciężarówek. 
-                  Rampa załadunkowa dostępna 24/7. Prosimy o wcześniejsze zgłoszenie.
-                </p>
-              </div>
+              {(translations?.contactPage?.transport || []).map((item: any, index: number) => (
+                <div key={index} className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
+                  <div className="text-5xl mb-4">{item.icon}</div>
+                  <h3 className="font-bold text-slate-900 dark:text-white mb-3 text-xl">{item.title}</h3>
+                  <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -139,28 +120,11 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12 text-slate-900 dark:text-white">
-              Najczęstsze Pytania
+              {t('contactPage.faq')}
             </h2>
             
             <div className="space-y-4">
-              {[
-                {
-                  q: "Jaki jest czas odpowiedzi na zapytanie?",
-                  a: "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin roboczych."
-                },
-                {
-                  q: "Czy mogę odwiedzić fabrykę?",
-                  a: "Tak, zapraszamy! Prosimy o wcześniejsze umówienie wizyty telefonicznie ze względów bezpieczeństwa."
-                },
-                {
-                  q: "Czy oferujecie wsparcie techniczne?",
-                  a: "Tak, nasz dział techniczny służy bezpłatnym doradztwem dla wszystkich klientów."
-                },
-                {
-                  q: "Jak mogę złożyć reklamację?",
-                  a: "Reklamacje prosimy kierować na email: OfficeProduction@consbridgeproduction.pl lub telefonicznie."
-                }
-              ].map((faq, index) => (
+              {(translations?.contactPage?.faqs || []).map((faq: any, index: number) => (
                 <div key={index} className="bg-slate-100 dark:bg-slate-800 p-6 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-cyan-500/50 transition-all">
                   <h3 className="font-bold text-slate-900 dark:text-white mb-2 flex items-start gap-2">
                     <span className="text-cyan-600 dark:text-cyan-400">Q:</span>

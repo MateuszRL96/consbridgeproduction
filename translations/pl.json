@@ -1,0 +1,577 @@
+{
+  "header": {
+    "phone": "+48 507 070 516",
+    "email": "OfficeProduction@consbridgeproduction.pl",
+    "hours": "Pon - Pt: 8:00 - 16:00",
+    "nav": {
+      "home": "Strona Główna",
+      "services": "Usługi",
+      "career": "Kariera",
+      "contact": "Kontakt"
+    },
+    "cta": "Skontaktuj się",
+    "links": {
+      "home": "Strona Główna",
+      "services": "Usługi",
+      "career": "Kariera",
+      "contact": "Kontakt"
+    }
+  },
+  "career": {
+    "badge": "Dołącz do zespołu",
+    "title": "Kariera w Consbridge Production",
+    "description": "Szukamy specjalistów, którzy chcą rozwijać nowoczesną produkcję chemiczną we współpracy z doświadczonym zespołem.",
+    "cta": "Wyślij aplikację",
+    "positionsSection": {
+      "title": "Aktualne oferty pracy",
+      "description": "Znajdź stanowisko dopasowane do Twojego doświadczenia i dołącz do naszego zespołu produkcyjnego.",
+      "apply": "Aplikuj",
+      "fallbackLink": "/kariera"
+    },
+    "positions": [
+      {
+        "title": "Operator wózka widłowego",
+        "link": "/kariera?stanowisko=operator-wozka-widlowego",
+        "requirements": [
+          "Uprawnienia UDT na wózki widłowe.",
+          "Minimum 1 rok doświadczenia w obsłudze wózków widłowych.",
+          "Gotowość do pracy w systemie zmianowym.",
+          "Dbałość o bezpieczeństwo i porządek w magazynie."
+        ]
+      },
+      {
+        "title": "Technik produkcji chemicznej",
+        "link": "/kariera?stanowisko=technik-produkcji-chemicznej",
+        "requirements": [
+          "Wykształcenie techniczne lub chemiczne.",
+          "Znajomość procedur bezpieczeństwa w zakładzie produkcyjnym.",
+          "Umiejętność pracy z dokumentacją procesową.",
+          "Otwartość na pracę w zespole i ciągłe doskonalenie."
+        ]
+      }
+    ],
+    "form": {
+      "title": "Formularz aplikacyjny",
+      "name": "Imię i nazwisko *",
+      "email": "Adres e-mail *",
+      "message": "Krótka wiadomość",
+      "messagePlaceholder": "Napisz kilka słów o sobie...",
+      "cv": "Dodaj CV (PDF) *",
+      "cvHelp": "Załącz plik PDF do 10 MB.",
+      "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby rekrutacji. *",
+      "submit": "Wyślij aplikację",
+      "sending": "Wysyłanie...",
+      "success": "✓ Dziękujemy! Twoja aplikacja została wysłana.",
+      "required": "* Pola wymagane. Twoje dane są bezpieczne i wykorzystywane wyłącznie w procesie rekrutacji.",
+      "errors": {
+        "type": "Dozwolone są tylko pliki PDF.",
+        "size": "Plik nie może być większy niż 10 MB.",
+        "missing": "Dołącz plik PDF przed wysłaniem formularza."
+      }
+    }
+  },
+  "features": {
+    "badge": "Zakres Produkcji",
+    "title": "Nasze Możliwości Produkcyjne",
+    "description": "Produkcja środków chemicznych – prosto, bezpiecznie, na czas",
+    "items": {
+      "industrial": {
+        "title": "Chemikalia Przemysłowe",
+        "desc": "Produkcja chemikaliów dla przemysłu ciężkiego i lekkiego",
+        "link": "#chemiczne"
+      },
+      "agriculture": {
+        "title": "Środki dla Rolnictwa",
+        "desc": "Nawozy, pestycydy i środki ochrony roślin",
+        "link": "#nawozy"
+      },
+      "pharma": {
+        "title": "Surowce Farmaceutyczne",
+        "desc": "Produkcja zgodna z normami GMP i standardami medycznymi",
+        "link": "#farmaceutyki"
+      },
+      "cosmetics": {
+        "title": "Surowce Kosmetyczne",
+        "desc": "Składniki aktywne dla przemysłu kosmetycznego",
+        "link": "#kosmetyki"
+      },
+      "quality": {
+        "title": "Kontrola Jakości",
+        "desc": "Badania i analizy każdej partii produktów",
+        "link": "#badania"
+      },
+      "transport": {
+        "title": "Logistyka ADR",
+        "desc": "Transport materiałów niebezpiecznych z certyfikatem ADR",
+        "link": "#transport"
+      }
+    },
+    "cta": "Zobacz pełną ofertę produkcyjną",
+    "moreInfo": "Dowiedz się więcej"
+  },
+  "about": {
+    "badge": "Nasze Przewagi",
+    "title": "Dlaczego Nasza Fabryka?",
+    "description": "Nowoczesna produkcja. Jakość i bezpieczeństwo w standardzie",
+    "items": {
+      "iso": {
+        "title": "Certyfikaty ISO",
+        "desc": "ISO 9001, ISO 14001 i zgodność z normami UE"
+      },
+      "logistics": {
+        "title": "Logistyka ADR",
+        "desc": "Bezpieczny transport materiałów niebezpiecznych"
+      },
+      "quality": {
+        "title": "Kontrola Jakości",
+        "desc": "Własne laboratorium i testy każdej partii"
+      },
+      "safety": {
+        "title": "Bezpieczeństwo",
+        "desc": "Najwyższe standardy BHP i ochrony środowiska"
+      },
+      "rnd": {
+        "title": "Laboratorium R&D",
+        "desc": "Nowoczesne laboratorium badawczo-rozwojowe dla innowacji i testów"
+      }
+    }
+  },
+  "cta": {
+    "title": "Potrzebujesz Produkcji Chemicznej?",
+    "description": "Porozmawiajmy o produkcji. Szybka wycena i wsparcie ekspertów.",
+    "button": "Skontaktuj się teraz",
+    "phone": "Zadzwoń do nas"
+  },
+  "services": {
+    "badge": "Nasze Usługi",
+    "title": "Kompleksowe Rozwiązania dla Twojej Branży",
+    "description": "Rozwiązania dla przemysłu, rolnictwa, farmacji i badań.",
+    "items": {
+      "chemicals": {
+        "title": "Produkty Chemiczne",
+        "desc": "Szeroka gama produktów chemicznych dla przemysłu, nauki i fotografii. Najwyższa jakość i bezpieczeństwo.",
+        "features": ["Chemikalia przemysłowe", "Żywice syntetyczne", "Tworzywa sztuczne", "Preparaty konserwujące"]
+      },
+      "fertilizers": {
+        "title": "Nawozy i Środki Ochrony",
+        "desc": "Efektywne nawozy, pestycydy i środki chwastobójcze dla rolnictwa, ogrodnictwa i leśnictwa.",
+        "features": ["Nawozy azotowe", "Pestycydy", "Fungicydy", "Środki chwastobójcze"]
+      },
+      "pharma": {
+        "title": "Produkty Farmaceutyczne",
+        "desc": "Preparaty farmaceutyczne, weterynaryjne oraz suplementy diety najwyższej jakości.",
+        "features": ["Preparaty medyczne", "Produkty weterynaryjne", "Suplementy diety", "Środki dezynfekcyjne"]
+      },
+      "cosmetics": {
+        "title": "Kosmetyki i Detergenty",
+        "desc": "Profesjonalne kosmetyki, mydła, detergenty i preparaty pielęgnacyjne dla przemysłu i konsumentów.",
+        "features": ["Kosmetyki przemysłowe", "Detergenty", "Olejki eteryczne", "Preparaty toaletowe"]
+      },
+      "research": {
+        "title": "Badania i Analizy",
+        "desc": "Kompleksowe usługi badawcze, analizy laboratoryjne i kontrola jakości produktów.",
+        "features": ["Badania naukowe", "Analizy laboratoryjne", "Kontrola jakości", "Certyfikacja"]
+      },
+      "transport": {
+        "title": "Transport i Logistyka",
+        "desc": "Profesjonalny transport, pakowanie i składowanie towarów chemicznych zgodnie z normami.",
+        "features": ["Transport specjalistyczny", "Składowanie", "Pakowanie", "Logistyka międzynarodowa"]
+      }
+    },
+    "moreInfo": "Dowiedz się więcej"
+  },
+  "products": {
+    "badge": "Nasze Produkty",
+    "title": "Szeroka Gama Produktów i Usług",
+    "description": "Ponad 500 produktów. Dobierzemy właściwe rozwiązanie dla Twojej branży.",
+    "categories": {
+      "all": "Wszystkie",
+      "chemical": "Chemikalia",
+      "agriculture": "Rolnictwo",
+      "pharma": "Farmacja",
+      "cosmetics": "Kosmetyki",
+      "research": "Badania"
+    },
+    "items": {
+      "industrial_chemicals": {
+        "name": "Produkty Chemiczne Przemysłowe",
+        "desc": "Wysokiej jakości chemikalia dla przemysłu i nauki",
+        "features": ["Kwasy i zasady", "Rozpuszczalniki", "Katalizatory", "Odczynniki"]
+      },
+      "resins": {
+        "name": "Żywice i Tworzywa",
+        "desc": "Nieprzetworzone żywice syntetyczne i tworzywa sztuczne",
+        "features": ["Żywice epoksydowe", "Poliuretany", "Polimery", "Dodatki"]
+      },
+      "fertilizers": {
+        "name": "Nawozy Azotowe",
+        "desc": "Efektywne nawozy dla rolnictwa i ogrodnictwa",
+        "features": ["Mocznik", "Saletra amonowa", "RSM", "Nawozy wieloskładnikowe"]
+      },
+      "crop_protection": {
+        "name": "Środki Ochrony Roślin",
+        "desc": "Pestycydy, fungicydy i herbicydy",
+        "features": ["Pestycydy", "Fungicydy", "Herbicydy", "Insektycydy"]
+      },
+      "pharma_preparations": {
+        "name": "Preparaty Farmaceutyczne",
+        "desc": "Produkty medyczne i weterynaryjne",
+        "features": ["Leki", "Preparaty weterynaryjne", "Środki dezynfekcyjne", "Antyseptyki"]
+      },
+      "supplements": {
+        "name": "Suplementy Diety",
+        "desc": "Wysokiej jakości suplementy i preparaty biochemiczne",
+        "features": ["Witaminy", "Minerały", "Probiotyki", "Preparaty białkowe"]
+      },
+      "cosmetics_pro": {
+        "name": "Kosmetyki Profesjonalne",
+        "desc": "Produkty kosmetyczne dla przemysłu i konsumentów",
+        "features": ["Perfumy", "Olejki eteryczne", "Kremy", "Balsamy"]
+      },
+      "detergents": {
+        "name": "Detergenty i Mydła",
+        "desc": "Środki czyszczące i preparaty pielęgnacyjne",
+        "features": ["Mydła", "Detergenty", "Środki wybielające", "Preparaty do polerowania"]
+      },
+      "lab_services": {
+        "name": "Usługi Laboratoryjne",
+        "desc": "Kompleksowe badania i analizy naukowe",
+        "features": ["Analizy chemiczne", "Badania jakości", "Certyfikacja", "Konsultacje"]
+      }
+    },
+    "cta": "Zapytaj o produkt",
+    "notFound": "Nie znalazłeś tego, czego szukasz? Skontaktuj się z nami!",
+    "contactExpert": "Skontaktuj się z ekspertem"
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Skontaktuj się z Nami",
+    "description": "Napisz lub zadzwoń. Odpowiemy szybko i konkretnie.",
+    "form": {
+      "title": "Formularz Kontaktowy",
+      "name": "Imię i Nazwisko *",
+      "namePlaceholder": "Jan Kowalski",
+      "email": "Email *",
+      "emailPlaceholder": "jan@example.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+48 123 456 789",
+      "company": "Firma",
+      "companyPlaceholder": "Nazwa firmy",
+      "subject": "Temat *",
+      "subjectPlaceholder": "Wybierz temat",
+      "message": "Wiadomość *",
+      "messagePlaceholder": "Opisz swoje zapytanie...",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "✓ Dziękujemy! Twoja wiadomość została wysłana. Skontaktujemy się wkrótce.",
+      "required": "* Pola wymagane. Twoje dane są bezpieczne i nie będą udostępniane osobom trzecim.",
+      "options": {
+        "select": "Wybierz temat",
+        "products": "Zapytanie o produkty",
+        "order": "Złożenie zamówienia",
+        "research": "Usługi badawcze",
+        "transport": "Transport i logistyka",
+        "cooperation": "Współpraca",
+        "other": "Inne"
+      }
+    },
+    "address": "Fryderyka Chopina 94, 43-600 Jaworzno",
+    "hours": "Pon - Pt: 8:00 - 16:00"
+  },
+  "servicesPage": {
+    "title": "Nasze Usługi Produkcyjne",
+    "description": "Kompleksowa produkcja środków chemicznych dla przemysłu, rolnictwa i medycyny",
+    "heroProducts": "30+ Produktów",
+    "heroCategories": "6 Kategorii",
+    "heroCapacity": "5,000+ ton/rok",
+    "sectionTitle": "Zakres Naszej Produkcji",
+    "sectionDescription": "Nowoczesne technologie i najwyższe standardy jakości",
+    "services": [
+      {
+        "title": "Chemikalia Przemysłowe",
+        "description": "Produkcja wysokiej jakości chemikaliów dla przemysłu ciężkiego i lekkiego",
+        "features": ["Kwasy i zasady", "Rozpuszczalniki", "Odczynniki chemiczne"]
+      },
+      {
+        "title": "Środki dla Rolnictwa",
+        "description": "Nawozy, pestycydy i środki ochrony roślin zgodne z normami UE",
+        "features": ["Nawozy mineralne", "Pestycydy", "Regulatory wzrostu"]
+      },
+      {
+        "title": "Surowce Farmaceutyczne",
+        "description": "Produkcja zgodna z normami GMP i standardami medycznymi",
+        "features": ["API (substancje czynne)", "Surowce pomocnicze", "Certyfikaty GMP"]
+      },
+      {
+        "title": "Surowce Kosmetyczne",
+        "description": "Składniki aktywne dla przemysłu kosmetycznego i pielęgnacyjnego",
+        "features": ["Emulgatory", "Konserwanty", "Substancje aktywne"]
+      },
+      {
+        "title": "Kontrola Jakości",
+        "description": "Kompleksowe badania i analizy każdej partii produktów",
+        "features": ["Testy laboratoryjne", "Certyfikaty jakości", "Dokumentacja"]
+      },
+      {
+        "title": "Logistyka ADR",
+        "description": "Bezpieczny transport materiałów niebezpiecznych z certyfikatem ADR",
+        "features": ["Transport ADR", "Magazynowanie", "Dostawa 24-48h"]
+      }
+    ],
+    "whyUs": "Dlaczego Warto Wybrać Nas?",
+    "whyUsDescription": "Nowoczesne technologie produkcyjne i najwyższe standardy jakości",
+    "packaging": {
+      "title": "Konfekcjonowanie i Opakowanie",
+      "description": "Profesjonalne usługi konfekcjonowania produktów chemicznych z pełną obsługą logistyczną",
+      "features": [
+        "Konfekcjonowanie w różne opakowania",
+        "Etykietowanie i drukowanie",
+        "Sterylne opakowanie dla produktów farmaceutycznych",
+        "Gotowość do wysyłki międzynarodowej"
+      ]
+    },
+    "production": {
+      "title": "Wydajność Produkcji",
+      "description": "Zaawansowane linie produkcyjne zdolne do obsługi dużych wolumenów",
+      "stats": [
+        {
+          "label": "Zdolność produkcyjna",
+          "value": "5,000+",
+          "unit": "ton/rok"
+        },
+        {
+          "label": "Linie produkcyjne",
+          "value": "12",
+          "unit": "nowoczesnych linii"
+        },
+        {
+          "label": "Personel techniczny",
+          "value": "45+",
+          "unit": "specjalistów"
+        },
+        {
+          "label": "Czasu pracy",
+          "value": "24/7",
+          "unit": "możliwość produkcji"
+        }
+      ]
+    },
+    "benefits": [
+      {
+        "icon": "⚡",
+        "title": "Szybka Realizacja",
+        "description": "Dostawa w 24-48h na terenie całej Polski"
+      },
+      {
+        "icon": "🎯",
+        "title": "Doradztwo Techniczne",
+        "description": "Bezpłatne konsultacje z naszymi specjalistami"
+      },
+      {
+        "icon": "📋",
+        "title": "Certyfikaty Jakości",
+        "description": "ISO 9001, ISO 14001, ISO 45001"
+      },
+      {
+        "icon": "💰",
+        "title": "Konkurencyjne Ceny",
+        "description": "Najlepszy stosunek jakości do ceny"
+      },
+      {
+        "icon": "🔒",
+        "title": "Bezpieczeństwo",
+        "description": "Zgodność z normami UE i polskim prawem"
+      },
+      {
+        "icon": "📞",
+        "title": "Wsparcie 24/7",
+        "description": "Zawsze jesteśmy do Twojej dyspozycji"
+      },
+      {
+        "icon": "🧪",
+        "title": "Laboratorium R&D",
+        "description": "Nowoczesne laboratorium badawczo-rozwojowe dla innowacji i testów"
+      }
+    ],
+    "cooperation": "Jak Wygląda Współpraca?",
+    "cooperationDescription": "Prosty i przejrzysty proces od zapytania do dostawy",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Zapytanie",
+        "description": "Skontaktuj się z nami telefonicznie lub przez formularz"
+      },
+      {
+        "step": "02",
+        "title": "Oferta",
+        "description": "Otrzymasz spersonalizowaną ofertę w ciągu 24h"
+      },
+      {
+        "step": "03",
+        "title": "Zamówienie",
+        "description": "Potwierdzenie zamówienia i przygotowanie produktów"
+      },
+      {
+        "step": "04",
+        "title": "Dostawa",
+        "description": "Szybka i bezpieczna dostawa do Twojej firmy"
+      }
+    ],
+    "scope": "Zakres Produkcji",
+    "scopeDescription": "Specjalizujemy się w kompleksowej produkcji chemicznej"
+  },
+  "contactPage": {
+    "title": "Skontaktuj Się z Fabryką",
+    "description": "Jesteśmy do Twojej dyspozycji - odpowiemy na wszystkie pytania dotyczące produkcji",
+    "quickContact": "Szybki Kontakt",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Adres",
+    "hours": "Godziny",
+    "addressText": "ul. Fryderyka Chopina 94, 43-600 Jaworzno",
+    "hoursText": "Pn-Pt: 8:00 - 18:00<br/>Sb: 9:00 - 14:00",
+    "directions": "Jak Dojechać?",
+    "directionsDescription": "Fabryka znajduje się w Jaworznie - dogodny dojazd z całego regionu",
+    "transport": [
+      {
+        "icon": "🚗",
+        "title": "Samochodem",
+        "description": "Parking dla klientów i dostawców dostępny na terenie fabryki. Wjazd od ul. Fryderyka Chopina. Dogodny dojazd z autostrady A4."
+      },
+      {
+        "icon": "🚌",
+        "title": "Komunikacją",
+        "description": "Przystanek autobusowy w pobliżu fabryki. Połączenia z centrum Jaworzna i okolicznych miejscowości."
+      },
+      {
+        "icon": "🚚",
+        "title": "Transport Ciężki",
+        "description": "Wydzielony plac manewrowy dla ciężarówek. Rampa załadunkowa dostępna 24/7. Prosimy o wcześniejsze zgłoszenie."
+      }
+    ],
+    "faq": "Najczęstsze Pytania",
+    "faqs": [
+      {
+        "q": "Jaki jest czas odpowiedzi na zapytanie?",
+        "a": "Odpowiadamy na wszystkie zapytania w ciągu 24 godzin roboczych."
+      },
+      {
+        "q": "Czy mogę odwiedzić fabrykę?",
+        "a": "Tak, zapraszamy! Prosimy o wcześniejsze umówienie wizyty telefonicznie ze względów bezpieczeństwa."
+      },
+      {
+        "q": "Czy oferujecie wsparcie techniczne?",
+        "a": "Tak, nasz dział techniczny służy bezpłatnym doradztwem dla wszystkich klientów."
+      },
+      {
+        "q": "Jak mogę złożyć reklamację?",
+        "a": "Reklamacje prosimy kierować na email: OfficeProduction@consbridgeproduction.pl lub telefonicznie."
+      }
+    ]
+  },
+  "pageDescriptions": {
+    "aboutCompany": "Nowoczesna fabryka chemiczna. Produkujemy bezpiecznie i terminowo – od 2022 roku."
+  },
+  "productClasses": {
+    "fullScope": "Pełny Zakres Działalności",
+    "productClasses": "Klasy Produktów i Usług",
+    "comprehensiveOffer": "Kompleksowa oferta produkcyjna zgodna z międzynarodowymi standardami",
+    "class1": {
+      "title": "Produkty Chemiczne",
+      "subtitle": "Przemysł, Rolnictwo, Nauka",
+      "items": [
+        "Nawozy i mieszanki nawozów (w tym nawozy azotowe)",
+        "Produkty chemiczne stosowane w przemyśle i w nauce",
+        "Produkty chemiczne stosowane w fotografii",
+        "Preparaty chemiczne do stosowania w przemyśle spożywczym",
+        "Środki chemiczne stosowane w rolnictwie, ogrodnictwie i leśnictwie",
+        "Żywice syntetyczne nieprzetworzone i nieprzetworzone tworzywa sztuczne",
+        "Preparaty chemiczne do konserwowania artykułów spożywczych",
+        "Substancje garbujące",
+        "Dekstryna (klej), kleje i preparaty klejące przeznaczone dla przemysłu",
+        "Chemikalia czyszczące"
+      ]
+    },
+    "class3": {
+      "title": "Kosmetyki i Detergenty",
+      "subtitle": "Pielęgnacja i Czystość",
+      "items": [
+        "Mydła i detergenty",
+        "Środki wybielające stosowane w pralnictwie (ultramaryna)",
+        "Preparaty do wybielania, odnawiania i polerowania",
+        "Substancje do szorowania",
+        "Produkty perfumeryjne i perfumy do zastosowań przemysłowych",
+        "Kosmetyki i kosmetyki do pielęgnacji urody",
+        "Olejki eteryczne",
+        "Preparaty do pielęgnacji zębów",
+        "Preparaty toaletowe"
+      ]
+    },
+    "class5": {
+      "title": "Farmacja i Medycyna",
+      "subtitle": "Zdrowie i Ochrona",
+      "items": [
+        "Pestycydy",
+        "Preparaty farmaceutyczne, medyczne i weterynaryjne",
+        "Środki dezynfekcyjne i antyseptyczne",
+        "Żywność dla diet medycznych",
+        "Preparaty higieniczne do użytku medycznego",
+        "Preparaty biochemiczne do użytku medycznego",
+        "Suplementy diety",
+        "Plastry, materiały opatrunkowe i medyczne",
+        "Materiały dentystyczne do plombowania i naprawiania zębów",
+        "Środki odkażające, chwastobójcze i fungicydy",
+        "Lecznicze preparaty toaletowe"
+      ]
+    },
+    "class39_42": {
+      "title": "Usługi Specjalistyczne",
+      "subtitle": "Transport i Badania",
+      "class39": {
+        "title": "Klasa 39 - Transport i Logistyka",
+        "items": [
+          "Transport materiałów chemicznych",
+          "Pakowanie i składowanie towarów",
+          "Organizowanie transportu i podróży"
+        ]
+      },
+      "class42": {
+        "title": "Klasa 42 - Badania i Analizy",
+        "items": [
+          "Badania i analizy naukowe",
+          "Prace badawcze nad produktami",
+          "Badania naukowe i przemysłowe",
+          "Usługi naukowe i technologiczne",
+          "Analizy laboratoryjne",
+          "Usługi kontroli jakości i uwierzytelniania"
+        ]
+      }
+    },
+    "additionalInfo": "Kompleksowe Rozwiązania dla Twojej Branży",
+    "additionalDescription": "Nasza fabryka oferuje pełen zakres produktów i usług chemicznych zgodnych z międzynarodowymi standardami jakości. Dysponujemy certyfikatami ISO, własnym laboratorium badawczym oraz możliwością transportu ADR. Każdy produkt przechodzi rygorystyczną kontrolę jakości.",
+    "askAboutDetails": "Zapytaj o szczegóły produkcji"
+  },
+  "footer": {
+    "description": "Nowoczesna fabryka chemiczna. Produkcja wysokiej jakości środków chemicznych dla przemysłu, rolnictwa i medycyny.",
+    "quickLinks": "Szybkie Linki",
+    "production": "Zakres Produkcji",
+    "contactTitle": "Kontakt",
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka Prywatności",
+    "terms": "Regulamin",
+    "by": "Wykonane przez mkcup2.com",
+    "links": {
+      "home": "Strona Główna",
+      "services": "Usługi",
+      "contact": "Kontakt"
+    },
+    "scope": [
+      "Chemikalia Przemysłowe",
+      "Środki dla Rolnictwa",
+      "Surowce Kosmetyczne",
+      "Surowce Farmaceutyczne",
+      "Kontrola Jakości",
+      "Logistyka ADR"
+    ]
+  }
+}

@@ -2,17 +2,19 @@
 
 import { useState } from 'react'
 import { FaFlask, FaSeedling, FaPills, FaSprayCan, FaMicroscope, FaBoxes } from 'react-icons/fa'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Products() {
   const [activeCategory, setActiveCategory] = useState('all')
+  const { translations } = useTranslation()
 
   const categories = [
-    { id: 'all', label: 'Wszystkie', icon: <FaBoxes /> },
-    { id: 'chemical', label: 'Chemikalia', icon: <FaFlask /> },
-    { id: 'agriculture', label: 'Rolnictwo', icon: <FaSeedling /> },
-    { id: 'pharma', label: 'Farmacja', icon: <FaPills /> },
-    { id: 'cosmetics', label: 'Kosmetyki', icon: <FaSprayCan /> },
-    { id: 'research', label: 'Badania', icon: <FaMicroscope /> },
+    { id: 'all', label: translations.products.categories.all, icon: <FaBoxes /> },
+    { id: 'chemical', label: translations.products.categories.chemical, icon: <FaFlask /> },
+    { id: 'agriculture', label: translations.products.categories.agriculture, icon: <FaSeedling /> },
+    { id: 'pharma', label: translations.products.categories.pharma, icon: <FaPills /> },
+    { id: 'cosmetics', label: translations.products.categories.cosmetics, icon: <FaSprayCan /> },
+    { id: 'research', label: translations.products.categories.research, icon: <FaMicroscope /> },
   ]
 
   const products = [
@@ -86,18 +88,18 @@ export default function Products() {
     : products.filter(p => p.category === activeCategory)
 
   return (
-    <section id="products" className="section-padding bg-white">
+    <section id="products" className="section-padding bg-transparent">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-primary-600 font-semibold text-sm uppercase tracking-wider">
-            Nasze Produkty
+            {translations.products.badge}
           </span>
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-secondary-900 mt-3 mb-6">
-            Szeroka Gama Produktów i Usług
+            {translations.products.title}
           </h2>
           <p className="text-lg text-secondary-600">
-            Oferujemy ponad 500 produktów z różnych kategorii, dostosowanych do potrzeb Twojej branży.
+            {translations.products.description}
           </p>
         </div>
 
@@ -154,7 +156,7 @@ export default function Products() {
                 href="#contact"
                 className="block w-full text-center bg-white text-primary-600 px-6 py-3 rounded-lg font-medium border-2 border-primary-200 hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-all duration-300"
               >
-                Zapytaj o produkt
+                {translations.products.cta}
               </a>
             </div>
           ))}
@@ -163,13 +165,13 @@ export default function Products() {
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <p className="text-secondary-600 mb-6">
-            Nie znalazłeś tego, czego szukasz? Skontaktuj się z nami!
+            {translations.products.notFound}
           </p>
           <a
             href="#contact"
             className="inline-block bg-gradient-primary text-white px-8 py-4 rounded-lg font-medium text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
           >
-            Skontaktuj się z ekspertem
+            {translations.products.contactExpert}
           </a>
         </div>
       </div>

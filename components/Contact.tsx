@@ -2,8 +2,10 @@
 
 import { useState } from 'react'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from 'react-icons/fa'
+import { useTranslation } from '@/hooks/useTranslation'
 
 export default function Contact() {
+  const { translations } = useTranslation()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -54,18 +56,18 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-800">
+    <section id="contact" className="section-padding bg-transparent">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-wider">
-            Kontakt
+            {translations.contact.badge}
           </span>
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-slate-900 dark:text-white mt-3 mb-6">
-            Skontaktuj się z Nami
+            {translations.contact.title}
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400">
-            Masz pytania? Chcesz złożyć zamówienie? Nasz zespół jest gotowy, aby Ci pomóc!
+            {translations.contact.description}
           </p>
         </div>
 
@@ -90,19 +92,19 @@ export default function Contact() {
               {/* Contact Form - Right Side */}
               <div className="p-8 md:p-12 flex flex-col justify-center">
                 <h3 className="font-heading font-bold text-2xl text-slate-900 dark:text-white mb-6">
-                  Formularz Kontaktowy
+                  {translations.contact.form.title}
                 </h3>
 
                 {submitStatus === 'success' && (
                   <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-700 rounded-lg text-green-700 dark:text-green-300">
-                    ✓ Dziękujemy! Twoja wiadomość została wysłana. Skontaktujemy się wkrótce.
+                    {translations.contact.form.success}
                   </div>
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Imię i Nazwisko *
+                      {translations.contact.form.name}
                     </label>
                     <input
                       type="text"
@@ -112,13 +114,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                      placeholder="Jan Kowalski"
+                      placeholder={translations.contact.form.namePlaceholder}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Email *
+                      {translations.contact.form.email}
                     </label>
                     <input
                       type="email"
@@ -128,13 +130,13 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                      placeholder="jan@example.com"
+                      placeholder={translations.contact.form.emailPlaceholder}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Telefon
+                      {translations.contact.form.phone}
                     </label>
                     <input
                       type="tel"
@@ -143,13 +145,13 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                      placeholder="+48 123 456 789"
+                      placeholder={translations.contact.form.phonePlaceholder}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Firma
+                      {translations.contact.form.company}
                     </label>
                     <input
                       type="text"
@@ -158,13 +160,13 @@ export default function Contact() {
                       value={formData.company}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                      placeholder="Nazwa firmy"
+                      placeholder={translations.contact.form.companyPlaceholder}
                     />
                   </div>
 
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Temat *
+                      {translations.contact.form.subject}
                     </label>
                     <select
                       id="subject"
@@ -174,19 +176,19 @@ export default function Contact() {
                       required
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
                     >
-                      <option value="">Wybierz temat</option>
-                      <option value="products">Zapytanie o produkty</option>
-                      <option value="order">Złożenie zamówienia</option>
-                      <option value="research">Usługi badawcze</option>
-                      <option value="transport">Transport i logistyka</option>
-                      <option value="cooperation">Współpraca</option>
-                      <option value="other">Inne</option>
+                      <option value="">{translations.contact.form.options.select}</option>
+                      <option value="products">{translations.contact.form.options.products}</option>
+                      <option value="order">{translations.contact.form.options.order}</option>
+                      <option value="research">{translations.contact.form.options.research}</option>
+                      <option value="transport">{translations.contact.form.options.transport}</option>
+                      <option value="cooperation">{translations.contact.form.options.cooperation}</option>
+                      <option value="other">{translations.contact.form.options.other}</option>
                     </select>
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-                      Wiadomość *
+                      {translations.contact.form.message}
                     </label>
                     <textarea
                       id="message"
@@ -196,7 +198,7 @@ export default function Contact() {
                       required
                       rows={4}
                       className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none resize-none"
-                      placeholder="Opisz swoje zapytanie..."
+                      placeholder={translations.contact.form.messagePlaceholder}
                     ></textarea>
                   </div>
 
@@ -208,18 +210,18 @@ export default function Contact() {
                     {isSubmitting ? (
                       <>
                         <span className="animate-spin">⏳</span>
-                        Wysyłanie...
+                        {translations.contact.form.sending}
                       </>
                     ) : (
                       <>
                         <FaPaperPlane />
-                        Wyślij wiadomość
+                        {translations.contact.form.submit}
                       </>
                     )}
                   </button>
 
                   <p className="text-xs text-slate-500 dark:text-slate-400 text-center">
-                    * Pola wymagane. Twoje dane są bezpieczne i nie będą udostępniane osobom trzecim.
+                    {translations.contact.form.required}
                   </p>
                 </form>
               </div>
